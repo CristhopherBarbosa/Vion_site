@@ -70,7 +70,7 @@ const ScriptLoader: React.FC<ScriptLoaderProps> = ({
       if ('requestIdleCallback' in window) {
         (window as any).requestIdleCallback(loadScript);
       } else {
-        window.setTimeout(loadScript, 1500);
+        (window as any).setTimeout(loadScript, 1500);
       }
 
       return () => {
