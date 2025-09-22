@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { Inter, Montserrat } from 'next/font/google';
 import Head from 'next/head';
+import { reportWebVitals } from '@/lib/reportWebVitals';
 
 // Configuração de fontes para otimizar Core Web Vitals
 const inter = Inter({
@@ -28,3 +29,6 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+// Exporta a função reportWebVitals para o Next.js usar automaticamente
+export { reportWebVitals };

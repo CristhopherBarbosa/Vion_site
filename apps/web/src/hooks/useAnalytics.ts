@@ -33,10 +33,7 @@ const useAnalytics = () => {
         },
       });
       
-      // Envia métricas Core Web Vitals quando disponíveis
-      if ('web-vitals' in window) {
-        sendWebVitals();
-      }
+      // Nota: as métricas web-vitals são reportadas separadamente através da função reportWebVitals
     };
 
     // Escuta eventos de mudança de rota no Next.js
@@ -91,16 +88,6 @@ const useAnalytics = () => {
     }
   };
 
-  // Envia métricas Core Web Vitals para o analytics
-  const sendWebVitals = () => {
-    import('web-vitals').then(({ getCLS, getFID, getLCP, getFCP, getTTFB }) => {
-      getCLS((metric) => trackWebVital('CLS', metric.value));
-      getFID((metric) => trackWebVital('FID', metric.value));
-      getLCP((metric) => trackWebVital('LCP', metric.value));
-      getFCP((metric) => trackWebVital('FCP', metric.value));
-      getTTFB((metric) => trackWebVital('TTFB', metric.value));
-    });
-  };
 
   // Rastreia cada métrica Core Web Vital
   const trackWebVital = (name: string, value: number) => {
@@ -136,7 +123,6 @@ const useAnalytics = () => {
 
   return {
     trackEvent,
-    sendWebVitals,
   };
 };
 
