@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Desativando páginas específicas
+Disallow: /privacidade
+Disallow: /termos
+Disallow: /lgpd
+
+# Sitemap
+Sitemap: https://vion.tech/sitemap.xml

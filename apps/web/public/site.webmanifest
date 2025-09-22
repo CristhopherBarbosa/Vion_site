@@ -1,0 +1,27 @@
+{
+  "name": "Vion - Tecnologia Humana para a Saúde",
+  "short_name": "Vion",
+  "description": "Integração de gestão clínica e IA para revolucionar o atendimento e a eficiência em hospitais e operadoras.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1A7CFF",
+  "icons": [
+    {
+      "src": "/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

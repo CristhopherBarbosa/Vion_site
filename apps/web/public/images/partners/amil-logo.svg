@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <g>
+    <path d="M30,15 L50,45 L70,15 L30,15 Z" fill="#0066B3"/>
+    <path d="M25,20 L40,45 L55,20 L25,20 Z" fill="#0066B3"/>
+    <path d="M35,25 L45,45 L55,25 L35,25 Z" fill="#0066B3"/>
+    <path d="M75,15 L95,15 C100,15 105,20 105,25 C105,30 100,35 95,35 L85,35 L85,45 L75,45 L75,15 Z" fill="#0066B3"/>
+    <path d="M85,25 L90,25 C92,25 93,24 93,22 C93,20 92,19 90,19 L85,19 L85,25 Z" fill="white"/>
+    <path d="M110,15 L120,15 L130,30 L140,15 L150,15 L150,45 L140,45 L140,28 L130,38 L120,28 L120,45 L110,45 L110,15 Z" fill="#0066B3"/>
+  </g>
+  <text x="155" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0066B3">amil</text>
+</svg>

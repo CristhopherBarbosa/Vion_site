@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página Inicial -->
+  <url>
+    <loc>https://vion.tech/</loc>
+    <lastmod>2025-09-21T21:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Páginas de Produtos -->
+  <url>
+    <loc>https://vion.tech/vion-med</loc>
+    <lastmod>2025-09-21T21:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://vion.tech/vion-ia</loc>
+    <lastmod>2025-09-21T21:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <!-- Página Sobre -->
+  <url>
+    <loc>https://vion.tech/sobre</loc>
+    <lastmod>2025-09-21T21:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Página Cases -->
+  <url>
+    <loc>https://vion.tech/casos-de-sucesso</loc>
+    <lastmod>2025-09-21T21:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>bimonthly</changefreq>
+  </url>
+  
+  <!-- Blog e artigos -->
+  <url>
+    <loc>https://vion.tech/blog</loc>
+    <lastmod>2025-09-21T21:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://vion.tech/blog/ia-revolucionando-telemedicina</loc>
+    <lastmod>2025-09-15T10:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://vion.tech/blog/lgpd-saude-hospitais</loc>
+    <lastmod>2025-08-28T14:30:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://vion.tech/blog/estrategias-gestao-financeira-clinicas</loc>
+    <lastmod>2025-08-10T09:15:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  
+  <!-- Contato -->
+  <url>
+    <loc>https://vion.tech/contato</loc>
+    <lastmod>2025-09-21T21:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>

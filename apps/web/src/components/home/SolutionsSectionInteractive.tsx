@@ -1,0 +1,118 @@
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
+
+const SolutionCard: React.FC<{
+  title: string;
+  description: string;
+  image: string;
+  href: string;
+  index: number;
+}> = ({ title, description, image, href, index }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(cardRef, { once: true, margin: "-50px" });
+  
+  return (
+    <motion.div
+      ref={cardRef}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      className="bg-white rounded-xl overflow-hidden shadow-soft-lg border border-gray-100 hover:shadow-soft-xl hover:-translate-y-1 transition-all duration-300"
+    >
+      <div className="relative h-48 w-full">
+        <Image 
+          src={image} 
+          alt={title} 
+          fill 
+          className="object-cover"
+        />
+      </div>
+      
+      <div className="p-6">
+        <h3 className="text-2xl font-bold mb-3 text-gray-900">{title}</h3>
+        <p className="text-gray-600 mb-6">{description}</p>
+        <Link href={href} className="text-primary-600 font-medium flex items-center hover:text-primary-700">
+          Saiba Mais
+          <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
+      </div>
+    </motion.div>
+  );
+};
+
+const SolutionsSectionInteractive: React.FC = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+  
+  const solutions = [
+    {
+      title: "Vion Med: Gestão Clínica Completa",
+      description: "Software que unifica agendamento, prontuário eletrônico e faturamento, permitindo mais tempo para o cuidado com o paciente.",
+      image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      href: "/vion-med"
+    },
+    {
+      title: "VionIA Bot: Atendimento Inteligente 24/7",
+      description: "Chatbot especializado em saúde para qualificação de leads, agendamento de consultas e automação de processos, integrado com a API Oficial da Meta.",
+      image: "https://images.unsplash.com/photo-1596443686812-2f45229eebc3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      href: "/vionia-bot"
+    },
+    {
+      title: "Vion Enterprise: Soluções personalizadas",
+      description: "Integração de sistemas legados e desenvolvimento de APIs seguras para grandes operadoras e hospitais.",
+      image: "https://images.unsplash.com/photo-1573166364524-d9dbfd8bbf83?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      href: "/enterprise"
+    }
+  ];
+
+  return (
+    <section id="solutions" className="py-20 bg-gray-50" ref={sectionRef}>
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            Soluções completas para cada necessidade.
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Nossa plataforma integrada oferece soluções modulares que se adaptam ao seu negócio, 
+            da gestão clínica básica aos sistemas enterprise mais complexos.
+          </p>
+        </motion.div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {solutions.map((solution, index) => (
+            <SolutionCard 
+              key={solution.title} 
+              {...solution} 
+              index={index} 
+            />
+          ))}
+        </div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-16 text-center"
+        >
+          <Link 
+            href="/contato" 
+            className="btn btn-primary inline-block py-3 px-8 text-lg"
+          >
+            Encontre a solução ideal para você
+          </Link>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default SolutionsSectionInteractive;

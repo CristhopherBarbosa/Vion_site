@@ -1,0 +1,34 @@
+# Dependências
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Arquivos de build e ambiente de teste
+/.next/
+/out/
+/build
+/dist
+.next
+.env*.local
+.vercel
+.turbo
+*.tsbuildinfo
+
+# Arquivos de cobertura
+coverage
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos do sistema operacional
+.DS_Store
+*.pem
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo

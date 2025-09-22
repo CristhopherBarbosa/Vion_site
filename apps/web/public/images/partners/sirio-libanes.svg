@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <g>
+    <circle cx="40" cy="30" r="15" fill="#007749"/>
+    <path d="M35,22 L45,22 L45,38 L35,38 Z" fill="white"/>
+    <path d="M32,27 L48,27 L48,33 L32,33 Z" fill="white"/>
+    
+    <text x="65" y="27" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#007749">HOSPITAL</text>
+    <text x="65" y="42" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#007749">SÍRIO LIBANÊS</text>
+  </g>
+</svg>
